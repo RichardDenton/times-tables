@@ -121,6 +121,11 @@ button:hover {
     opacity: 1;
 }
 
+#score {
+    text-align: center;
+    font-weight: bold;
+}
+
 .widebutton {
     grid-column: span 2;
     background-color: #a3b3f6;
