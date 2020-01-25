@@ -128,6 +128,7 @@ rightpanel {
 
 #results {
     width: 250px;
+    background-color: #5effe4;
 }
 
 #results:hover {
