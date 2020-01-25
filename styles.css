@@ -6,10 +6,10 @@ body {
 h1 {
     text-align: center;
     font-family: 'Orbitron', sans-serif;
-    grid-column: span 3;
     background-color: #5effe4;
-    padding-top: 10px;
-    height: 50px;
+    height: 100%;
+    padding-top: 0;
+    margin: 0;
 }
 
 tr {
@@ -27,6 +27,25 @@ button {
 button:hover {
     background-color: #333;
     color: #f00;
+}
+
+#header {
+    grid-column: span 3;
+    background-color: #5effe4;
+    margin-bottom: 15px;
+    padding-top: 1vh;
+}
+
+#centrepanel {
+    margin-top: 15px;
+}
+
+leftpanel {
+    margin-top: 15px;
+}
+
+rightpanel {
+    margin-top: 15px;
 }
 
 #controlstable {

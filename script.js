@@ -29,6 +29,7 @@ const keyPress = function(e) {
                     del();
                     break;
                 case 'Enter':
+                    e.preventDefault();
                     if (testStarted) submitAnswer();
                     break;
                 case 'S':
@@ -112,8 +113,9 @@ const submitAnswer = function() {
         correctAnswer = '';
         mark = '✅';
     }
-    const resultText = document.getElementById(`q${questionNumber}result`);
+    const resultText = document.createElement('p');
     resultText.textContent = `${questionNumber}: ${currentQuestion[0]} × ${currentQuestion[1]} = ${answerDisplayString} ${mark} ${correctAnswer}`;
+    resultPanel.appendChild(resultText);
     updateScoreDisplay();
     questionNumber += 1;
     if (questionNumber <= maxFactor) {
@@ -157,6 +159,7 @@ const scroreDisplay = document.getElementById('score');
 const questionDisplay = document.getElementById("questions");
 questionDisplay.textContent = `Enter which test to take (1-${maxFactor}):`
 const answerDisplay = document.getElementById("answer");
+const resultPanel = document.getElementById("results");
 let answerDisplayString = "";
 const buttons = document.querySelectorAll("button");
 buttons.forEach(button => button.addEventListener('click', buttonPress));
