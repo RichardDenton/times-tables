@@ -7,7 +7,7 @@ The interface is designed to resemble a calculator with the results of the test 
 
 ## How to run
 The tester is run by loading index.html in a browser (This has been tested in both Chrome and Firefox). The
-app is also live at [https://richarddenton.github.io/times-tables
+app is also live at [https://richarddenton.github.io/times-tables]
 
 ## Screenshot
-![times-tables screenshot](screenshot.png)
+![times-tables screenshot](Screenshot.png)
