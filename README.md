@@ -2,6 +2,7 @@
 
 A JavaScript timestables tester developed for my children's school times tables practice. Allows 
 times tables from 1 up to 12. The maximum allowed times table can be set in main.js by adjusting the maxFactor constant.
+The test can be taken with the questions either the standard order or in random order.
 
 The interface is designed to resemble a calculator with the results of the test displayed to the right of the calculator.
 
